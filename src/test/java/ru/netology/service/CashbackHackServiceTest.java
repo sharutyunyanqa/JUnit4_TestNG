@@ -17,20 +17,21 @@ public class CashbackHackServiceTest {
 
     @Test
     public void shouldTestWhenItsAbove1000() {
-        CashbackHackService service= new CashbackHackService();
+        CashbackHackService service = new CashbackHackService();
 
-        int expected=800;
-        int actual= service.remain(1200);
-        assertEquals(expected,actual);
+        int expected = 800;
+        int actual = service.remain(1200);
+        assertEquals(expected, actual);
 
     }
+
     @Test
-    public void shouldTestWhenIts1000(){
+    public void shouldTestCashBackWhenIts1000() {
         CashbackHackService service= new CashbackHackService();
 
         int expected=0;
-        int actual= service.remain(1000);
-        assertEquals(expected,actual);
+        int actual=service.remain(1000);
+        assertEquals(expected, actual);
     }
 
-}
+    }
