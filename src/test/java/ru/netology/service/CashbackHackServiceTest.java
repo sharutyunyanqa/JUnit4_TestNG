@@ -32,7 +32,7 @@ public class CashbackHackServiceTest {
 
         int expected=0;
         int actual= service.remain(1000);
-        assertEquals(expected,actual);
+        assertEquals (expected,actual);
     }
 
 }
